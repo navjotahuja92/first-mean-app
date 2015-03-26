@@ -1,4 +1,5 @@
 # first-mean-app
+<<<<<<< HEAD
 Just trying out MEAN Stack.
 
 Application contains:
@@ -42,3 +43,6 @@ Run node server.js
 Open http://localhost:3000 
 
 
+=======
+Just trying out MEAN Stack
+>>>>>>> 842b1b0b485daac41c6163c156c0858d9a910342
