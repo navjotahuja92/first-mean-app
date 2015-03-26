@@ -1,0 +1,14 @@
+{
+  "name": "MeanApp",
+  "version": "0.0.1",
+  "description": "My First Mean App",
+  "main": "index.js",
+  "author": "Navjot Ahuja <navjotahuja92@gmail.com>",
+  "dependencies" : {
+        "express" : "latest",
+        "body-parser" : "latest",
+        "mongoose" : "3.8",
+        "crypto"   : "latest",
+        "express-session" : "latest"
+    }
+}

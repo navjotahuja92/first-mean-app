@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="DiscussionApp">
+<head>
+	<title> Discussion Board </title>
+	<base href="/">
+	<link rel="stylesheet" type="text/css" href="src/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="src/css/main.css">
+</head>
+<body>
+	<div class="background-image"></div>
+	<div class="container col-lg-10 col-lg-offset-2 " id="mainContent">
+		<div class="page-header">
+				<h1> Discussion Board </h1>
+		</div>
+
+		<div class="row">
+				<div class="col-sm-12" ng-view></div>
+		</div>
+	</div>
+	<script src="lib/jquery/dist/jquery.min.js"></script>
+	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="lib/angular/angular.min.js"></script>
+	<script src="lib/angular-route/angular-route.min.js"></script>
+	<script src="lib/angular-resource/angular-resource.min.js"></script>
+	<script src="lib/angular-cookies/angular-cookies.min.js"></script>
+	<script src="src/js/app.js"></script>
+	<script src="src/js/factories.js"></script>
+	<script src="src/js/controllers.js"></script>
+	<script src="src/js/directives.js"></script>
+</body>	
+</html>

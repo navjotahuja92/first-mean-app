@@ -1,0 +1,60 @@
+<div ng-controller="DiscussionController">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Discussion</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      	<li><a href="#"> {{ currentUser }}</a></li>
+        <!-- <li><a href="#">Link</a></li> -->
+      </ul>
+
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="/logout" target="_self">Log Out</a></li>
+    </ul>
+    <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" ng-model="search">
+        </div>
+    </form>
+
+    </div>
+  </div>
+</nav>
+
+    <div class="row">
+	    <div class="col-sm-12" style="height: 300px;overflow: scroll;" schroll-bottom="comments">
+	    <div ng-repeat="item in comments | filter : search">
+		   <blockquote  ng-class="{'pull-right' : item.posted_by == currentUser}" >
+				  <p> {{ item.comment }} </p>
+				  <small>{{ item.posted_by }} </small>
+			</blockquote>
+			<div class="clearfix"></div>
+	    </div>
+	    </div>
+    </div>
+    <br/>
+    <div class="row">
+    	<div class="col-sm-12">
+    		<div class="alert alert-dismissible alert-info" ng-show="showMessage">
+            <h4>{{ messageResult }}</h4>
+      </div>
+    	</div>
+    	<form ng-submit="postComment()" >
+	    <div class="col-sm-10">
+	    	<input type="text" class="form-control" placeholder="Enter Message" ng-model="comment">
+	    </div>
+	    <div class="col-sm-2">
+	    	<button type="button" class="form-control btn btn-success" ng-click="postComment()"> Send </button>
+	    </div>
+	    </form>
+    </div>
+	</div>
