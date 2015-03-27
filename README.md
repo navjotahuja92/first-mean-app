@@ -14,30 +14,30 @@ The page also has serach filter to search conversation.
 
 cd into the dump directory
 
-` cd dump 
+` cd dump `
 
 Run the following command.
 
-`mongorestore discussion
+`mongorestore discussion `
 
 
 ## Install Node dependencies
 
 cd into the project root directory and run:
 
-` npm install
+` npm install `
 
 ## Install Bower dependencies
 
 In the project root run:
 
-` bower install
+` bower install `
 
 ## Run Application
 
 Run node server.js
 
-` node server.js
+` node server.js `
 
 
 Open http://localhost:3000 
